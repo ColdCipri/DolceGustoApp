@@ -13,7 +13,9 @@ import com.example.dolcegusto21.R
 import com.example.dolcegustoapp.Model.Gusto
 
 
-class RecyclerViewAdapter(context: Context , listOfCoffe: ArrayList<Gusto>) : RecyclerView.Adapter<RecyclerViewAdapter.ViewHolder>() {
+class RecyclerViewAdapter(private var context: Context ,
+                          private var items: List<Gusto>
+    ) : RecyclerView.Adapter<RecyclerViewAdapter.ViewHolder>() {
 
     private val itemTitles = arrayOf("Text1", "Text2")
 
@@ -40,16 +42,18 @@ class RecyclerViewAdapter(context: Context , listOfCoffe: ArrayList<Gusto>) : Re
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        holder.title.text = itemTitles[position]
-        holder.thumbnail.setImageResource(itemImages[position])
+        holder.title.text = items[position].name
+        holder.thumbnail.setImageDrawable(items[position].picture)
 
         holder.itemView.setOnClickListener{v: View ->
 
-            Toast.makeText(v.context, "Clicked on item", Toast.LENGTH_SHORT).show()
+            Toast.makeText(v.context, "Clicked on " + holder.title.text, Toast.LENGTH_SHORT).show()
         }
     }
 
-    override fun getItemCount(): Int {
-        return itemTitles.size
+    override fun getItemCount(): Int = items.size
+
+    fun updateItems(newItems: List<Gusto>) {
+        items = newItems
     }
 }

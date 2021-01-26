@@ -5,7 +5,7 @@ import android.graphics.drawable.Drawable
 
 class Gusto (
     val name: String,
-    val picture: Drawable
+    val picture: Drawable?
         /*val id: Int,
         val name: String,
         val type: String,
