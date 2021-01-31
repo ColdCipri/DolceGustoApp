@@ -3,7 +3,8 @@
     android:layout_width="match_parent"
     android:layout_height="150dp"
     xmlns:cardview="http://schemas.android.com/apk/res-auto"
-    android:layout_margin="6dp"
+    android:id="@+id/id_cardview"
+    android:layout_margin="10dp"
     cardview:cardCornerRadius="10dp">
 
     <LinearLayout
@@ -12,21 +13,28 @@
         android:layout_height="match_parent">
 
         <ImageView
-            android:id="@+id/id_gusto_imageview"
+            android:id="@+id/id_cardview_image"
             android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:scaleType="centerCrop"
             android:src="@drawable/starbucks_cappucino"
-            android:background="#2d2d2d"/>
+            android:background="#2d2d2d"
+            android:contentDescription="@string/string_title" />
 
-        <TextView
-            android:id="@+id/id_gusto_textview"
-            android:textSize="30sp"
-            android:gravity="start"
-            android:text="Title"
-            android:layout_marginStart="6dp"
+        <LinearLayout
+            android:id="@+id/id_cardview_text_color"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/id_cardview_title"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="6dp"
+                android:gravity="center|start"
+                android:text="@string/string_title"
+                android:textSize="24sp" />
+        </LinearLayout>
 
     </LinearLayout>
 

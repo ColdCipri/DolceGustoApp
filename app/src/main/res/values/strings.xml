@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">DolceGusto21</string>
+    <string name="app_name">Dolce Gusto App</string>
+
+    <string name="string_title">Title</string>
 </resources>
