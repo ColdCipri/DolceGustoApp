@@ -4,8 +4,9 @@ import android.graphics.drawable.Drawable
 
 
 class Gusto (
-    val name: String,
-    val picture: Drawable?
+        val name: String,
+        val imageURL: Drawable?,
+        val predominantColor: String
         /*val id: Int,
         val name: String,
         val type: String,

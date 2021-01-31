@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/id_fragment_linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#815f5d"
+    tools:context=".Activity.DetailsActivity"
+    android:orientation="vertical">
+
+
+    <!--ImageView
+        android:id="@+id/id_fragment_image"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_margin="30dp"
+        android:src="@drawable/starbucks_cappucino"
+        android:contentDescription="@string/string_title" /-->
+
+
+</LinearLayout>
