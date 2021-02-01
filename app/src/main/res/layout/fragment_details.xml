@@ -19,5 +19,37 @@
         android:src="@drawable/starbucks_cappucino"
         android:contentDescription="@string/string_title" /-->
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:id="@+id/id_fragment_chronometer_layout"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <Chronometer
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/id_fragment_chronometer"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            />
+
+        <Button
+            android:id="@+id/button_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/start"/>
+
+        <Button
+            android:id="@+id/button_restart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/restart"/>
+
+    </LinearLayout>
 
 </LinearLayout>

@@ -2,4 +2,9 @@
     <string name="app_name">Dolce Gusto App</string>
 
     <string name="string_title">Title</string>
+    <string name="pause">Pause</string>
+    <string name="start">Start</string>
+    <string name="restart">Restart</string>
+    <string name="working">Started</string>
+    <string name="stopped">Stopped</string>
 </resources>

@@ -44,8 +44,8 @@ class RecyclerViewAdapter(private var context: Context ,
 
     class ViewHolder(itemView: View, var item: Gusto?) : RecyclerView.ViewHolder(itemView) {
         companion object{
-            val ITEM_TITLE = "item_name"
-            val ITEM_COLOR = "item_color"
+            const val ITEM_TITLE = "item_name"
+            const val ITEM_COLOR = "item_color"
         }
 
         init {
